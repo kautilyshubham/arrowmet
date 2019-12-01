@@ -1,0 +1,476 @@
+/*! Arrowmet v0.0.1 description-IT Service Company | (c) 2019 Arrowmet http://arrowmet.com/ */
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Bold.otf") format("opentype");
+  src: url("../font/azo/AzoSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Regular.otf") format("opentype");
+  src: url("../font/azo/AzoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-SemiboldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* line 3, src/sass/components/_reset.scss */
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 10, src/sass/components/_reset.scss */
+html {
+  font-size: 10px;
+}
+
+/* line 13, src/sass/components/_reset.scss */
+body {
+  font-size: 1.6rem;
+  color: #444;
+  line-height: 1;
+  font-family: "Azo Sans", sans-serif;
+  font-style: normal;
+}
+
+/* line 20, src/sass/components/_reset.scss */
+a, a:link, a:visited {
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+/* line 25, src/sass/components/_reset.scss */
+button {
+  border: none;
+}
+
+/* line 28, src/sass/components/_reset.scss */
+input {
+  font-family: inherit;
+}
+
+/* line 1, src/sass/components/_utility.scss */
+.container {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Bold.otf") format("opentype");
+  src: url("../font/azo/AzoSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Regular.otf") format("opentype");
+  src: url("../font/azo/AzoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-SemiboldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* line 3, src/sass/components/_navigation.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: transparent;
+  z-index: 999999;
+}
+
+/* line 11, src/sass/components/_navigation.scss */
+header menu {
+  width: 100%;
+  height: 100%;
+  padding: 0px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 18, src/sass/components/_navigation.scss */
+header menu .logo_part {
+  width: 50%;
+}
+
+/* line 20, src/sass/components/_navigation.scss */
+header menu .logo_part .nav_brand {
+  display: inline-block;
+  max-height: 65px;
+}
+
+/* line 23, src/sass/components/_navigation.scss */
+header menu .logo_part .nav_brand img {
+  max-height: 100%;
+  height: 50px;
+}
+
+/* line 30, src/sass/components/_navigation.scss */
+header menu .navbar {
+  width: 50%;
+}
+
+/* line 32, src/sass/components/_navigation.scss */
+header menu .navbar ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 40, src/sass/components/_navigation.scss */
+header menu .navbar ul .nav_item {
+  margin: 0px 20px;
+}
+
+/* line 42, src/sass/components/_navigation.scss */
+header menu .navbar ul .nav_item .nav_link {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #733AC4;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* line 47, src/sass/components/_navigation.scss */
+header menu .navbar ul .nav_item .nav_link:hover {
+  color: #FF4537;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Bold.otf") format("opentype");
+  src: url("../font/azo/AzoSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Regular.otf") format("opentype");
+  src: url("../font/azo/AzoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Azo Sans";
+  src: url("../font/azo/AzoSans-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-SemiboldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Domaine text";
+  src: url("../font/domaine/DomaineDispNar-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* line 5, src/sass/components/_front.scss */
+.main_section {
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 163, 4, 0.1);
+}
+
+/* line 10, src/sass/components/_front.scss */
+.main_section .main_out {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 15, src/sass/components/_front.scss */
+.main_section .main_out .main_out_left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0px 40px;
+}
+
+/* line 28, src/sass/components/_front.scss */
+.main_section .main_out .main_out_left .content .sub_title {
+  font-size: 3.5rem;
+  font-family: "Domaine text", serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* line 34, src/sass/components/_front.scss */
+.main_section .main_out .main_out_left .content .title {
+  font-size: 9rem;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 40px;
+}
+
+/* line 40, src/sass/components/_front.scss */
+.main_section .main_out .main_out_left .content .para {
+  font-size: 2rem;
+  line-height: 1.6;
+  font-family: "Domaine text", serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
