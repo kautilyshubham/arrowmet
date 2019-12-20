@@ -134,6 +134,30 @@ input {
   font-family: inherit;
 }
 
+/* width */
+/* line 32, src/sass/components/_reset.scss */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+/* line 37, src/sass/components/_reset.scss */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+/* line 42, src/sass/components/_reset.scss */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+/* line 47, src/sass/components/_reset.scss */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /* line 1, src/sass/components/_utility.scss */
 .container {
   width: 100%;
@@ -417,10 +441,9 @@ header menu .navbar ul .nav_item .nav_link:hover {
 .main_section {
   width: 100%;
   height: 100vh;
-  background: rgba(255, 163, 4, 0.1);
 }
 
-/* line 10, src/sass/components/_front.scss */
+/* line 8, src/sass/components/_front.scss */
 .main_section .main_out {
   width: 100%;
   height: 100%;
@@ -428,13 +451,13 @@ header menu .navbar ul .nav_item .nav_link:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-/* line 15, src/sass/components/_front.scss */
+/* line 14, src/sass/components/_front.scss */
 .main_section .main_out .main_out_left {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 50%;
   height: 100%;
   background: #fff;
@@ -450,15 +473,7 @@ header menu .navbar ul .nav_item .nav_link:hover {
   padding: 0px 40px;
 }
 
-/* line 28, src/sass/components/_front.scss */
-.main_section .main_out .main_out_left .content .sub_title {
-  font-size: 3.5rem;
-  font-family: "Domaine text", serif;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-/* line 34, src/sass/components/_front.scss */
+/* line 24, src/sass/components/_front.scss */
 .main_section .main_out .main_out_left .content .title {
   font-size: 9rem;
   font-weight: 900;
@@ -466,11 +481,199 @@ header menu .navbar ul .nav_item .nav_link:hover {
   margin-bottom: 40px;
 }
 
-/* line 40, src/sass/components/_front.scss */
+/* line 30, src/sass/components/_front.scss */
 .main_section .main_out .main_out_left .content .para {
   font-size: 2rem;
   line-height: 1.6;
   font-family: "Domaine text", serif;
   font-weight: 300;
   letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+/* line 38, src/sass/components/_front.scss */
+.main_section .main_out .main_out_left .content .link_button {
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 5px;
+  color: #733AC4;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+  background: rgba(115, 58, 196, 0.1);
+  -webkit-box-shadow: 0px 0px 10px rgba(115, 58, 196, 0.1);
+          box-shadow: 0px 0px 10px rgba(115, 58, 196, 0.1);
+}
+
+/* line 48, src/sass/components/_front.scss */
+.main_section .main_out .main_out_left .content .link_button:hover {
+  border: 1px solid #733AC4;
+}
+
+/* line 56, src/sass/components/_front.scss */
+.main_section .main_out .main_out_right {
+  width: 50%;
+  height: 100%;
+}
+
+/* line 59, src/sass/components/_front.scss */
+.main_section .main_out .main_out_right.bg1 {
+  background: rgba(255, 163, 4, 0.1);
+}
+
+/* line 62, src/sass/components/_front.scss */
+.main_section .main_out .main_out_right.bg2 {
+  background: rgba(115, 58, 196, 0.1);
+}
+
+/* line 65, src/sass/components/_front.scss */
+.main_section .main_out .main_out_right.bg3 {
+  background: rgba(255, 69, 55, 0.1);
+}
+
+/* line 68, src/sass/components/_front.scss */
+.main_section .main_out .main_out_right.bg4 {
+  background: rgba(0, 138, 239, 0.1);
+}
+
+/* line 71, src/sass/components/_front.scss */
+.main_section .main_out .main_out_right .image_container {
+  width: 100%;
+  padding: 50px;
+}
+
+/* line 74, src/sass/components/_front.scss */
+.main_section .main_out .main_out_right .image_container > img {
+  max-width: 100%;
+  position: relative;
+  top: 50%;
+}
+
+/* line 84, src/sass/components/_front.scss */
+.about_sec {
+  width: 100%;
+  padding: 75px 0px;
+}
+
+/* line 87, src/sass/components/_front.scss */
+.about_sec .about_outer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 91, src/sass/components/_front.scss */
+.about_sec .about_outer .about_img_part {
+  width: 60%;
+}
+
+/* line 93, src/sass/components/_front.scss */
+.about_sec .about_outer .about_img_part > img {
+  max-width: 100%;
+}
+
+/* line 3, src/sass/components/_slider.scss */
+.slideshow {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* line 12, src/sass/components/_slider.scss */
+.slideshow .slider {
+  width: 100vw;
+  height: 100vw;
+  z-index: 2;
+}
+
+/* line 17, src/sass/components/_slider.scss */
+.slideshow .slider * {
+  outline: none;
+}
+
+/* line 21, src/sass/components/_slider.scss */
+.slideshow .slider .item {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+/* line 30, src/sass/components/_slider.scss */
+.slideshow .slick-dots {
+  position: fixed;
+  z-index: 100;
+  width: 40px;
+  height: auto;
+  bottom: auto;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: auto;
+  color: #fff;
+  display: block;
+}
+
+/* line 43, src/sass/components/_slider.scss */
+.slideshow .slick-dots li {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 48, src/sass/components/_slider.scss */
+.slideshow .slick-dots li button {
+  position: relative;
+  width: 20px;
+  height: 15px;
+  text-align: center;
+}
+
+/* line 54, src/sass/components/_slider.scss */
+.slideshow .slick-dots li button:before {
+  content: '';
+  background: #733AC4;
+  color: #fff;
+  height: 2px;
+  width: 20px;
+  border-radius: 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  opacity: 0.6;
+}
+
+/* line 73, src/sass/components/_slider.scss */
+.slideshow .slick-dots li.slick-active button:before {
+  width: 40px;
+  opacity: 1;
+}
+
+/* line 82, src/sass/components/_slider.scss */
+.slideshow.slideshow-right {
+  left: 0;
+  z-index: 1;
+  width: 50vw;
+  pointer-events: none;
+}
+
+/* line 88, src/sass/components/_slider.scss */
+.slideshow.slideshow-right .slider {
+  left: 0;
+  position: absolute;
 }
