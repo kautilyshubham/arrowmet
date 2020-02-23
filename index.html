@@ -10,7 +10,11 @@
 	<link rel="canonical" href="https://www.arrowmet.com/">
 	<meta property="og:title" content="Web development, App development, Software development" />
 	<Meta name="robots" content="index, follow" />
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+	<link rel="manifest" href="fav/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#d3008d">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 	<link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
@@ -26,10 +30,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
-	<link rel="manifest" href="fav/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
-	<meta name="theme-color" content="#432166">
+
 
 </head>
 
@@ -38,7 +39,26 @@
 	<header id="header">
 		<menu class="container">
 			<div class="logo_part">
-				<a href="index.html" class="nav_brand"><img src="img/logo.svg" alt="arrowmet"></a>
+				<a href="index.html" class="nav_brand">
+					<svg id="logoSvg" width="744" height="133" viewBox="0 0 744 133" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M173.264 38.8399C180.304 38.8399 185.68 40.5679 189.392 44.0239C193.168 47.4799 195.056 52.6319 195.056 59.4799V90.1999H186.32V83.4799C184.784 85.8479 182.576 87.6719 179.696 88.9519C176.88 90.1679 173.52 90.7759 169.616 90.7759C163.92 90.7759 159.344 89.3999 155.888 86.6479C152.496 83.8959 150.8 80.2799 150.8 75.7999C150.8 71.3199 152.432 67.7359 155.696 65.0479C158.96 62.2959 164.144 60.9199 171.248 60.9199H185.84V59.0959C185.84 55.1279 184.688 52.0879 182.384 49.9759C180.08 47.8639 176.688 46.8079 172.208 46.8079C169.2 46.8079 166.256 47.3199 163.376 48.3439C160.496 49.3039 158.064 50.6159 156.08 52.2799L152.24 45.3679C154.864 43.2559 158 41.6559 161.648 40.5679C165.296 39.4159 169.168 38.8399 173.264 38.8399ZM171.152 83.6719C174.672 83.6719 177.712 82.9039 180.272 81.3679C182.832 79.7679 184.688 77.5279 185.84 74.6479V67.5439H171.632C163.824 67.5439 159.92 70.1679 159.92 75.4159C159.92 77.9759 160.912 79.9919 162.896 81.4639C164.88 82.9359 167.632 83.6719 171.152 83.6719ZM220.943 47.8639C222.543 44.9199 224.911 42.6799 228.047 41.1439C231.183 39.6079 234.991 38.8399 239.471 38.8399V47.7679C238.959 47.7039 238.255 47.6719 237.359 47.6719C232.367 47.6719 228.431 49.1759 225.551 52.1839C222.735 55.1279 221.327 59.3519 221.327 64.8559V90.1999H212.111V39.3199H220.943V47.8639ZM259.662 47.8639C261.262 44.9199 263.63 42.6799 266.766 41.1439C269.902 39.6079 273.71 38.8399 278.19 38.8399V47.7679C277.678 47.7039 276.974 47.6719 276.078 47.6719C271.086 47.6719 267.15 49.1759 264.27 52.1839C261.454 55.1279 260.046 59.3519 260.046 64.8559V90.1999H250.83V39.3199H259.662V47.8639ZM310.872 90.7759C305.816 90.7759 301.272 89.6559 297.24 87.4159C293.208 85.1759 290.04 82.1039 287.736 78.1999C285.496 74.2319 284.376 69.7519 284.376 64.7599C284.376 59.7679 285.496 55.3199 287.736 51.4159C290.04 47.4479 293.208 44.3759 297.24 42.1999C301.272 39.9599 305.816 38.8399 310.872 38.8399C315.928 38.8399 320.44 39.9599 324.408 42.1999C328.44 44.3759 331.576 47.4479 333.816 51.4159C336.12 55.3199 337.272 59.7679 337.272 64.7599C337.272 69.7519 336.12 74.2319 333.816 78.1999C331.576 82.1039 328.44 85.1759 324.408 87.4159C320.44 89.6559 315.928 90.7759 310.872 90.7759ZM310.872 82.7119C314.136 82.7119 317.048 81.9759 319.608 80.5039C322.232 78.9679 324.28 76.8559 325.752 74.1679C327.224 71.4159 327.96 68.2799 327.96 64.7599C327.96 61.2399 327.224 58.1359 325.752 55.4479C324.28 52.6959 322.232 50.5839 319.608 49.1119C317.048 47.6399 314.136 46.9039 310.872 46.9039C307.608 46.9039 304.664 47.6399 302.04 49.1119C299.48 50.5839 297.432 52.6959 295.896 55.4479C294.424 58.1359 293.688 61.2399 293.688 64.7599C293.688 68.2799 294.424 71.4159 295.896 74.1679C297.432 76.8559 299.48 78.9679 302.04 80.5039C304.664 81.9759 307.608 82.7119 310.872 82.7119ZM425.603 39.3199L406.595 90.1999H397.763L383.075 51.6079L368.195 90.1999H359.363L340.451 39.3199H349.187L363.971 79.8319L379.331 39.3199H387.107L402.179 80.0239L417.347 39.3199H425.603ZM498.603 38.8399C505.003 38.8399 510.059 40.6959 513.771 44.4079C517.547 48.1199 519.435 53.6239 519.435 60.9199V90.1999H510.219V61.9759C510.219 57.0479 509.067 53.3359 506.763 50.8399C504.523 48.3439 501.291 47.0959 497.067 47.0959C492.395 47.0959 488.683 48.5679 485.931 51.5119C483.179 54.3919 481.803 58.5519 481.803 63.9919V90.1999H472.587V61.9759C472.587 57.0479 471.435 53.3359 469.131 50.8399C466.891 48.3439 463.659 47.0959 459.435 47.0959C454.763 47.0959 451.051 48.5679 448.299 51.5119C445.547 54.3919 444.171 58.5519 444.171 63.9919V90.1999H434.955V39.3199H443.787V46.9039C445.643 44.2799 448.075 42.2959 451.083 40.9519C454.091 39.5439 457.515 38.8399 461.355 38.8399C465.323 38.8399 468.843 39.6399 471.915 41.2399C474.987 42.8399 477.355 45.1759 479.019 48.2479C480.939 45.3039 483.595 42.9999 486.987 41.3359C490.443 39.6719 494.315 38.8399 498.603 38.8399ZM582.658 65.0479C582.658 65.7519 582.594 66.6799 582.466 67.8319H541.186C541.762 72.3119 543.714 75.9279 547.042 78.6799C550.434 81.3679 554.626 82.7119 559.618 82.7119C565.698 82.7119 570.594 80.6639 574.306 76.5679L579.394 82.5199C577.09 85.2079 574.21 87.2559 570.754 88.6639C567.362 90.0719 563.554 90.7759 559.33 90.7759C553.954 90.7759 549.186 89.6879 545.026 87.5119C540.866 85.2719 537.634 82.1679 535.33 78.1999C533.09 74.2319 531.97 69.7519 531.97 64.7599C531.97 59.8319 533.058 55.3839 535.234 51.4159C537.474 47.4479 540.514 44.3759 544.354 42.1999C548.258 39.9599 552.642 38.8399 557.506 38.8399C562.37 38.8399 566.69 39.9599 570.466 42.1999C574.306 44.3759 577.282 47.4479 579.394 51.4159C581.57 55.3839 582.658 59.9279 582.658 65.0479ZM557.506 46.6159C553.09 46.6159 549.378 47.9599 546.37 50.6479C543.426 53.3359 541.698 56.8559 541.186 61.2079H573.826C573.314 56.9199 571.554 53.4319 568.546 50.7439C565.602 47.9919 561.922 46.6159 557.506 46.6159ZM624.063 87.2239C622.719 88.3759 621.055 89.2719 619.071 89.9119C617.087 90.4879 615.039 90.7759 612.927 90.7759C607.807 90.7759 603.839 89.3999 601.023 86.6479C598.207 83.8959 596.799 79.9599 596.799 74.8399V46.9039H588.159V39.3199H596.799V28.1839H606.015V39.3199H620.607V46.9039H606.015V74.4559C606.015 77.2079 606.687 79.3199 608.031 80.7919C609.439 82.2639 611.423 82.9999 613.983 82.9999C616.799 82.9999 619.199 82.1999 621.183 80.5999L624.063 87.2239Z"
+							fill="#fff" id="logoText" />
+						<circle cx="66.5" cy="66.5" r="66.5" fill="url(#paint0_linear)" />
+						<path
+							d="M92.0703 92.0463C92.6758 93.8393 90.4825 95.2506 89.1016 93.9567L64.1711 70.5973C63.5019 69.9702 62.4706 69.9391 61.7648 70.5245L32.9042 94.4624C31.4102 95.7016 29.2734 94.0538 30.0922 92.2939L64.1344 19.1247C64.8274 17.6352 66.9833 17.7537 67.5089 19.3102L92.0703 92.0463Z"
+							fill="white" />
+						<defs>
+							<linearGradient id="paint0_linear" x1="66.5" y1="0" x2="66.5" y2="133"
+								gradientUnits="userSpaceOnUse">
+								<stop stop-color="#6224A2" />
+								<stop offset="1" stop-color="#1958D2" />
+							</linearGradient>
+						</defs>
+					</svg>
+
+				</a>
 			</div>
 			<input type="checkbox" class="menu_checkbox" id='menu_checkbox'>
 			<label for="menu_checkbox" class="menu_hamburger">
@@ -57,254 +77,194 @@
 		</menu>
 	</header>
 	<!-- main -->
-	<main class="main_section">
-		<div class="main_static_bg">
-			<svg viewBox="0 0 30 30" class="svg-iswy38">
-				<path
-					d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM15,6.23A8.77,8.77,0,1,0,23.77,15,8.77,8.77,0,0,0,15,6.23Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-1k9mgoi">
-				<path
-					d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM15,6.23A8.77,8.77,0,1,0,23.77,15,8.77,8.77,0,0,0,15,6.23Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 44.58" class="svg-xrc20p">
-				<path
-					d="M28.74,44.58a1.28,1.28,0,0,1-1-.51L15.16,27.13l-12.89,17a1.26,1.26,0,1,1-2-1.53l13.9-18.29a1.34,1.34,0,0,1,1-.5,1.24,1.24,0,0,1,1,.51L29.75,42.56a1.27,1.27,0,0,1-1,2Z">
-				</path>
-				<path
-					d="M14.83,20.82h0a1.28,1.28,0,0,1-1-.52L.25,2a1.27,1.27,0,0,1,2-1.51L14.84,17.45,27.73.5a1.26,1.26,0,0,1,2,1.53L15.84,20.32A1.28,1.28,0,0,1,14.83,20.82Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-1jxqyti">
-				<polygon stroke-width="1px" stroke-linejoin="round" stroke-miterlimit="10"
-					points="14.921,2.27 28.667,25.5 1.175,25.5 "></polygon>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-7o1iiz">
-				<path
-					d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM15,6.23A8.77,8.77,0,1,0,23.77,15,8.77,8.77,0,0,0,15,6.23Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-1ocb5nc">
-				<path
-					d="M28,2V28H2V2H28m.13-2H1.88A1.88,1.88,0,0,0,0,1.88V28.13A1.88,1.88,0,0,0,1.88,30H28.13A1.87,1.87,0,0,0,30,28.13V1.88A1.88,1.88,0,0,0,28.13,0Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-1ocq7bs">
-				<path
-					d="M28,2V28H2V2H28m.13-2H1.88A1.88,1.88,0,0,0,0,1.88V28.13A1.88,1.88,0,0,0,1.88,30H28.13A1.87,1.87,0,0,0,30,28.13V1.88A1.88,1.88,0,0,0,28.13,0Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-e5pyey">
-				<polygon stroke-linejoin="round" stroke-miterlimit="10"
-					points="27.5,21.904 15,28.809  2.5,21.904 2.5,8.095 15,1.19 27.5,8.095 "></polygon>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-6wbr2o">
-				<polygon stroke-linejoin="round" stroke-miterlimit="10"
-					points="27.5,21.904 15,28.809  2.5,21.904 2.5,8.095 15,1.19 27.5,8.095 "></polygon>
-			</svg>
-		</div>
-		<div class="main_bg_1 hide_mobile">
-			<svg viewBox="0 0 30 30" class="svg-1pp9ckp">
-				<polygon stroke-width="1px" stroke-linejoin="round" stroke-miterlimit="10"
-					points="14.921,2.27 28.667,25.5 1.175,25.5 "></polygon>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-sji3wt">
-				<polygon stroke-linejoin="round" stroke-miterlimit="10"
-					points="27.5,21.904 15,28.809  2.5,21.904 2.5,8.095 15,1.19 27.5,8.095 "></polygon>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-w31exa">
-				<path
-					d="M28,2V28H2V2H28m.13-2H1.88A1.88,1.88,0,0,0,0,1.88V28.13A1.88,1.88,0,0,0,1.88,30H28.13A1.87,1.87,0,0,0,30,28.13V1.88A1.88,1.88,0,0,0,28.13,0Z">
-				</path>
-			</svg>
-		</div>
-		</div>
-		<div class="main_bg_2 hide_mobile">
-			<svg viewBox="0 0 30 42" class="svg-y0dl48">
-				<path
-					d="M28.74,20.81H1.26a1.26,1.26,0,0,1-1-2L14.16.5a1.25,1.25,0,0,1,1-.5h0a1.24,1.24,0,0,1,1,.51L29.75,18.8a1.25,1.25,0,0,1-1,2ZM3.81,18.29H26.22L15.16,3.37Z">
-				</path>
-				<path
-					d="M28.74,42H1.26a1.28,1.28,0,0,1-1.13-.71A1.26,1.26,0,0,1,.26,40l13.9-18.29a1.28,1.28,0,0,1,1-.5h0a1.24,1.24,0,0,1,1,.51L29.75,40a1.26,1.26,0,0,1,.12,1.32A1.28,1.28,0,0,1,28.74,42ZM3.81,39.47H26.22L15.16,24.55Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-g6bejs">
-				<polygon stroke-width="1px" stroke-linejoin="round" stroke-miterlimit="10"
-					points="14.921,2.27 28.667,25.5 1.175,25.5 "></polygon>
-			</svg>
-			<svg viewBox="0 0 100 100" class="svg-sq6dfi">
-				<path stroke-width="3px"
-					d="M60.5,50l34.8-34.8c2.9-2.9,2.9-7.6,0-10.5c-2.9-2.9-7.6-2.9-10.5,0L50,39.5L15.2,4.7c-2.9-2.9-7.6-2.9-10.5,0    c-2.9,2.9-2.9,7.6,0,10.5L39.5,50L4.7,84.8c-2.9,2.9-2.9,7.6,0,10.5c1.4,1.4,3.3,2.2,5.2,2.2s3.8-0.7,5.2-2.2L50,60.5l34.8,34.8    c1.4,1.4,3.3,2.2,5.2,2.2c1.9,0,3.8-0.7,5.2-2.2c2.9-2.9,2.9-7.6,0-10.5L60.5,50z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 44.58" class="svg-1ebmap9">
-				<path
-					d="M28.74,44.58a1.28,1.28,0,0,1-1-.51L15.16,27.13l-12.89,17a1.26,1.26,0,1,1-2-1.53l13.9-18.29a1.34,1.34,0,0,1,1-.5,1.24,1.24,0,0,1,1,.51L29.75,42.56a1.27,1.27,0,0,1-1,2Z">
-				</path>
-				<path
-					d="M14.83,20.82h0a1.28,1.28,0,0,1-1-.52L.25,2a1.27,1.27,0,0,1,2-1.51L14.84,17.45,27.73.5a1.26,1.26,0,0,1,2,1.53L15.84,20.32A1.28,1.28,0,0,1,14.83,20.82Z">
-				</path>
-			</svg></div>
-		</div>
+	<main class="main">
 		<div class="container">
-			<img src="img/main.png" alt="arrowmet" class="main_img">
-			<div class="about_text_part">
-				<h2 class="main_h">Custom IT Solutions for your Business.</h2>
-				<p class="main_p">Since 2018 our company offers top notch IT service for comapanies all over the world.
-				</p>
-				<a href="contact.html" class="main_btn">Get in Touch &rarr;</a>
+			<div class="main_content">
+				<h3>Custom IT Solutions for your Business.</h3>
+				<p>Since 2018 our company offers top notch IT service for comapanies all over the world.</p>
+				<a href="#" class="w_btn">Get in touch</a>
 			</div>
-
 		</div>
-
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 110">
+			<path fill="#ffffff" fill-opacity="1"
+				d="M0,0L120,26.7C240,53,480,107,720,106.7C960,107,1200,53,1320,26.7L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+			</path>
+		</svg>
 	</main>
 	<!-- section 1 -->
-	<section id="pinMaster">
-		<div id="pinContainer">
-			<section class="panel blue">
-				<div class="service_main_box">
-					<div class="service_text_part">
-						<h2 class="service_main_heading">Web <br> Developemnt</h2>
-						<p class="para_b">Transform your website into a technically advanced web app by using a
-							state-of-the-art framework and advanced programming methodologies. Our Melbourne app
-							developers have created a diverse range of highly innovative, visually appealing and
-							competent web apps. </p>
-						<p class="service_links b"><a href="#">Website</a> <a href="#">Web App</a> <a href="#">Web
-								Portal</a> <a href="#">WordPress</a> <a href="#">Ecommerce</a></p>
-						<a href="#" class="b_btn service_btn">Know More</a>
+	<section class="service">
+		<div class="container">
+			<div class="main_service">
+				<div class="service-slider">
+					<div>
+						<div class="panel">
+							<div class="service_text_part">
+								<h2 class="service_main_heading" data-animation-in="fadeInUp">Web <br> Developemnt
+								</h2>
+								<p class="para_b" data-animation-in="fadeInUp" data-delay-in="0.3">Transform your
+									website
+									into a technically advanced web app by using a
+									state-of-the-art framework and advanced programming methodologies. Our Melbourne app
+									developers have created a diverse range of highly innovative, visually appealing and
+									competent web apps. </p>
+								<p class="service_links b">
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="0.6">Website</a>
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="0.7">Web App</a>
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="0.8">Web Portal</a>
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="0.9">WordPress</a>
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="1">Ecommerce</a>
+								</p>
+								<a href="#" data-animation-in="fadeInUp" data-delay-in="1.2" class="r_btn">Know
+									More</a>
 
+							</div>
+						</div>
 					</div>
-					<div class="service_img_part">
-						<img src="img/web-development.png" alt="web Development">
-					</div>
+					<div>
+						<div class="panel">
+							<div class="service_text_part">
+								<h2 class="service_main_heading" data-animation-in="fadeInUp">Mobile App <br>
+									Developemnt
+								</h2>
+								<p class="para_b" data-animation-in="fadeInUp" data-delay-in="0.3">Choosing the right
+									operating system for your mobile app determines its
+									impact
+									in the long run. We thoroughly analyse your business workflow and evaluate your goal
+									when
+									recommending the right platform. Whether you are looking for Android and iOS app
+									developers
+									or a mobile game development company, you’ve come to the right place. We are also
+									proficient
+									with the React Native which can give you a versatile app that works on all
+									platforms.
+								</p>
+								<p class="service_links y"><a href="#" data-animation-in="fadeInUp"
+										data-delay-in="0.6">Android</a>
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="0.7">Ios</a>
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="0.8">Hybrid</a> <a href="#"
+										data-animation-in="fadeInUp" data-delay-in="0.9">Native</a></p>
+								<a href="#" data-animation-in="fadeInUp" data-delay-in="1.1" class="r_btn">Know
+									More</a>
 
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="panel">
+							<div class="service_text_part">
+								<h2 class="service_main_heading" data-animation-in="fadeInUp">Software <br> Developemnt
+								</h2>
+								<p class="para_b" data-animation-in="fadeInUp" data-delay-in="0.3">Arrowmet supports the
+									entire software development lifecycle, from solution
+									and
+									architecture design followed by implementation and testing to delivery and further
+									maintenance. Our engineers take an active role in every project, helping to align
+									technology
+									with business goals and building long-term partnerships that deliver increasing
+									value
+									over
+									time.</p>
+								<p class="service_links g">
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="0.6">ORM</a>
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="0.7">CRM</a>
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="0.8">Admin Panel</a>
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="0.9">Analytics</a></p>
+								<a href="#" data-animation-in="fadeInUp" data-delay-in="1.1" class="r_btn">Know
+									More</a>
+
+							</div>
+
+						</div>
+					</div>
+					<div>
+						<div class="panel">
+							<div class="service_text_part">
+								<h2 class="service_main_heading" data-animation-in="fadeInUp"> Digital <br> Marketing
+								</h2>
+								<p class="para_b" data-animation-in="fadeInUp" data-delay-in="0.3">We identify your
+									brand
+									insights and give you that missing focus,
+									proposition,
+									positioning and a new story to tell. It is a plan that contains specific, long-term
+									goals
+									that can be accomplished with the evolution of a successful brand.</p>
+								<p class="service_links v">
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="0.6">SEO</a>
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="0.7">SMO</a>
+									<a href="#" data-animation-in="fadeInUp" data-delay-in="0.8">PPC</a></p>
+								<a href="#" data-animation-in="fadeInUp" data-delay-in="1" class="r_btn">Know
+									More</a>
+
+							</div>
+
+						</div>
+					</div>
 				</div>
-			</section>
-			<section class="panel yellow">
-				<div class="service_main_box">
-					<div class="service_text_part">
-						<h2 class="service_main_heading">Mobile App <br> Developemnt</h2>
-						<p class="para_b">Choosing the right operating system for your mobile app determines its impact
-							in the long run. We thoroughly analyse your business workflow and evaluate your goal when
-							recommending the right platform. Whether you are looking for Android and iOS app developers
-							or a mobile game development company, you’ve come to the right place. We are also proficient
-							with the React Native which can give you a versatile app that works on all platforms.</p>
-						<p class="service_links y"><a href="#">Android</a> <a href="#">Ios</a> <a href="#">Hybrid</a> <a
-								href="#">Native</a></p>
-						<a href="#" class="b_btn service_btn">Know More</a>
-
-					</div>
-					<div class="service_img_part">
-						<img src="img/app-development.png" alt="Mobile App Development">
-					</div>
-
+				<div class="service_img">
+					<img src="img/service.svg" alt="website development">
 				</div>
-			</section>
-			<section class="panel green">
-				<div class="service_main_box">
-					<div class="service_text_part">
-						<h2 class="service_main_heading">Software <br> Developemnt</h2>
-						<p class="para_b">Arrowmet supports the entire software development lifecycle, from solution and
-							architecture design followed by implementation and testing to delivery and further
-							maintenance. Our engineers take an active role in every project, helping to align technology
-							with business goals and building long-term partnerships that deliver increasing value over
-							time.</p>
-						<p class="service_links g"><a href="#">ORM</a> <a href="#">CRM</a> <a href="#">Admin Panel</a>
-							<a href="#">Analytics</a></p>
-						<a href="#" class="b_btn service_btn">Know More</a>
-
-					</div>
-					<div class="service_img_part">
-						<img src="img/software-development.png" alt="Software Development">
-					</div>
-
-				</div>
-			</section>
-			<section class="panel voilet">
-				<div class="service_main_box">
-					<div class="service_text_part">
-						<h2 class="service_main_heading"> Digital <br> Marketing</h2>
-						<p class="para_b">We identify your brand insights and give you that missing focus, proposition,
-							positioning and a new story to tell. It is a plan that contains specific, long-term goals
-							that can be accomplished with the evolution of a successful brand.</p>
-						<p class="service_links v"><a href="#">SEO</a> <a href="#">SMO</a> <a href="#">PPC</a></p>
-						<a href="#" class="b_btn service_btn">Know More</a>
-
-					</div>
-					<div class="service_img_part">
-						<img src="img/digital-marketing.png" alt="Digital Marketing">
-					</div>
-
-				</div>
-			</section>
+			</div>
 		</div>
+
 	</section>
 
 	<!-- section 2 -->
-	<section class="about_section">
-		<div class="main_static_bg">
-			<svg viewBox="0 0 30 30" class="svg-iswy38">
-				<path
-					d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM15,6.23A8.77,8.77,0,1,0,23.77,15,8.77,8.77,0,0,0,15,6.23Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-1k9mgoi">
-				<path
-					d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM15,6.23A8.77,8.77,0,1,0,23.77,15,8.77,8.77,0,0,0,15,6.23Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-v3cltz">
-				<path
-					d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM15,6.23A8.77,8.77,0,1,0,23.77,15,8.77,8.77,0,0,0,15,6.23Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 44.58" class="svg-xrc20p">
-				<path
-					d="M28.74,44.58a1.28,1.28,0,0,1-1-.51L15.16,27.13l-12.89,17a1.26,1.26,0,1,1-2-1.53l13.9-18.29a1.34,1.34,0,0,1,1-.5,1.24,1.24,0,0,1,1,.51L29.75,42.56a1.27,1.27,0,0,1-1,2Z">
-				</path>
-				<path
-					d="M14.83,20.82h0a1.28,1.28,0,0,1-1-.52L.25,2a1.27,1.27,0,0,1,2-1.51L14.84,17.45,27.73.5a1.26,1.26,0,0,1,2,1.53L15.84,20.32A1.28,1.28,0,0,1,14.83,20.82Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 44.58" class="svg-p4rv6q">
-				<path
-					d="M28.74,44.58a1.28,1.28,0,0,1-1-.51L15.16,27.13l-12.89,17a1.26,1.26,0,1,1-2-1.53l13.9-18.29a1.34,1.34,0,0,1,1-.5,1.24,1.24,0,0,1,1,.51L29.75,42.56a1.27,1.27,0,0,1-1,2Z">
-				</path>
-				<path
-					d="M14.83,20.82h0a1.28,1.28,0,0,1-1-.52L.25,2a1.27,1.27,0,0,1,2-1.51L14.84,17.45,27.73.5a1.26,1.26,0,0,1,2,1.53L15.84,20.32A1.28,1.28,0,0,1,14.83,20.82Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-1jxqyti">
-				<polygon stroke-width="1px" stroke-linejoin="round" stroke-miterlimit="10"
-					points="14.921,2.27 28.667,25.5 1.175,25.5 "></polygon>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-1ocq7bs">
-				<path
-					d="M28,2V28H2V2H28m.13-2H1.88A1.88,1.88,0,0,0,0,1.88V28.13A1.88,1.88,0,0,0,1.88,30H28.13A1.87,1.87,0,0,0,30,28.13V1.88A1.88,1.88,0,0,0,28.13,0Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-1iqfsio">
-				<path
-					d="M28,2V28H2V2H28m.13-2H1.88A1.88,1.88,0,0,0,0,1.88V28.13A1.88,1.88,0,0,0,1.88,30H28.13A1.87,1.87,0,0,0,30,28.13V1.88A1.88,1.88,0,0,0,28.13,0Z">
-				</path>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-e5pyey">
-				<polygon stroke-linejoin="round" stroke-miterlimit="10"
-					points="27.5,21.904 15,28.809  2.5,21.904 2.5,8.095 15,1.19 27.5,8.095 "></polygon>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-6wbr2o">
-				<polygon stroke-linejoin="round" stroke-miterlimit="10"
-					points="27.5,21.904 15,28.809  2.5,21.904 2.5,8.095 15,1.19 27.5,8.095 "></polygon>
-			</svg>
-			<svg viewBox="0 0 30 30" class="svg-7o1iiz hide_mobile">
-				<path
-					d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM15,6.23A8.77,8.77,0,1,0,23.77,15,8.77,8.77,0,0,0,15,6.23Z">
-				</path>
-			</svg>
+	<section class="benifits">
+		<div class="container">
+			<div class="row">
+				<div class="w_30">
+					<div class="benifit_box">
+						<div class="content">
+							<h2>2</h2>
+							<p>Years of Experience</p>
+						</div>
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" width="294" height="270" viewBox="0 0 294 270">
+							<path fill="#0051C1" fill-opacity=".08"
+								d="M60 17c-12 2-24 4-31 15-8 12-8 30-6 46s6 33 3 48c-5 24-25 39-26 64-1 17 9 33 21 42s26 10 40 8c53-7 95-63 149-64 24-1 53 9 71-10 15-16 17-45 7-67-16-38-62-60-92-72-45-16-91-17-136-10"
+								opacity=".640342"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="w_30">
+					<div class="benifit_box">
+						<div class="content">
+							<h2>50+</h2>
+							<p>Running Projects</p>
+						</div>
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" width="294" height="270" viewBox="0 0 294 270">
+							<g fill="none" fill-rule="evenodd" transform="translate(0 -2)">
+								<path fill="#0051C1" fill-opacity=".08" fill-rule="nonzero"
+									d="M0 167.6c-1.7-44.5 25.7-84.7 57.1-115 20.7-19.9 44.1-37.5 71-45.8 27-8.4 58-6.3 81 10.5 11.3 8.4 20.2 19.9 29.6 30.7 10.2 11.8 21.1 23.1 29 36.8a61.3 61.3 0 0 1 8 45.5c-5 18.7-21.6 31.3-38.2 40.3-16.5 8.9-34.6 15.9-47.9 29.6-18 18.6-25.3 46-49 59-16.6 9-42.8 15.3-61.7 11.8C37.4 263.4 1.8 208.7 0 167.6zm257.8 9c11-3.6 23.8-3.1 29.8 2.9 19.4 19.6-10 38.1-28.3 34h-.2c-18-4.1-18.8-31-1.3-36.8z"
+									opacity=".640342"></path>
+							</g>
+						</svg>
+					</div>
+				</div>
+				<div class="w_30">
+					<div class="benifit_box">
+						<div class="content">
+							<h2>20+</h2>
+							<p>IT Services</p>
+						</div>
+						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" width="294" height="270" viewBox="0 0 294 270">
+							<g fill="none" fill-rule="evenodd">
+								<path fill="#0051C1" fill-opacity=".08" fill-rule="nonzero"
+									d="M263 244c14-10 27-23 30-40 7-37-18-67-28-77-24-25-60-38-80-67-5-9-9-18-15-26A77 77 0 0 0 70 11C52 22 34 36 23 55 6 84-2 123 0 137c7 47 11 81 116 124 45 19 106 10 147-17"
+									opacity=".640342"></path>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="container df aic jcsb">
+	</section>
+
+	<!-- section 3 -->
+	<section class="about_section">
+		<div class="container">
 			<div class="about_left">
 				<h1 class="about_h">Meet all your IT solution at one place </h1>
 				<p class="para_b">Arrowmet founded in 2018 with dream to provide easy, scalable and best services in IT
@@ -315,13 +275,10 @@
 					experience to your customers across digital channels resulting in higher engagement, efficiency, and
 					profitability.</p>
 			</div>
-			<div class="about_right hide_mobile">
-				<img src="img/about.jpg" alt="">
-			</div>
 		</div>
 	</section>
 
-	<!-- section 3 -->
+	<!-- section 4 -->
 	<section class="project_section">
 		<div class="container">
 			<h2 class="product_h">Explore our product with just one click</h2>
@@ -367,9 +324,58 @@
 				</div>
 			</div>
 		</div>
+		<svg viewBox="0 0 1440 50" fill="#fffaf2">
+			<path
+				d="M1440,21.2101911 L1440,120 L0,120 L0,21.2101911 C120,35.0700637 240,42 360,42 C480,42 600,35.0700637 720,21.2101911 C808.32779,12.416393 874.573633,6.87702029 918.737528,4.59207306 C972.491685,1.8109458 1026.24584,0.420382166 1080,0.420382166 C1200,0.420382166 1320,7.35031847 1440,21.2101911 Z">
+			</path>
+		</svg>
 	</section>
 
-	<!-- section 4 -->
+	<!-- section 5 -->
+	<section class="process">
+		<div class="container">
+			<div class="row">
+				<div class="w_50">
+					<h2>We Help Startups & Brands Work Smart</h2>
+					<p class="main_para">We shape your idea to a final product with the help of our core theam and best
+						experts.</p>
+					<div class="df aic">
+						<div class="process_box">
+							<h5><span>1</span></h5>
+							<p>Strategise</p>
+						</div>
+						<div class="process_box">
+							<h5><span>2</span></h5>
+							<p>Development</p>
+						</div>
+						<div class="process_box">
+							<h5><span>3</span></h5>
+							<p>Testing</p>
+						</div>
+					</div>
+					<div class="df jcc" style="width: 600px;">
+						<div class="process_box">
+							<h5><span>4</span></h5>
+							<p>Review</p>
+						</div>
+						<div class="process_box">
+							<h5><span>5</span></h5>
+							<p>Launching</p>
+						</div>
+					</div>
+
+
+				</div>
+				<div class="w_50">
+					<div class="process_img_box">
+						<img src="img/process.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- section 6 -->
 	<footer class="footer_section">
 		<div class="container">
 			<div class="df jcsb">
@@ -437,64 +443,22 @@
 		</div>
 	</footer>
 
-	<!-- push notification -->
-	<script type="application/javascript" src="https://sdki.truepush.com/sdk/v2.0.2/app.js" async></script>
-	<script>
-		var truepush = window.truepush || [];
-		truepush.push(function () {
-			truepush.Init({
-				id: "5e47cfbf558e353345b25f52"
-			}, function (error) {
-				if (error) console.error(error);
-			})
-		})
-	</script>
-
 	<!-- Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/gsap.min.js"></script>
-	<script src="js/ScrollMagic.js"></script>
-	<script src="js/animation.gsap.js"></script>
-	<script>
-		$(function () { // wait for document ready
-			// init
-			var controller = new ScrollMagic.Controller();
-
-			// define movement of panels
-			var wipeAnimation = new TimelineMax()
-				.fromTo("section.panel.yellow", 1, {
-					x: "100%"
-				}, {
-					x: "0%",
-					ease: Linear.easeNone
-				}) // in from left
-				.fromTo("section.panel.green", 1, {
-					x: "100%"
-				}, {
-					x: "0%",
-					ease: Linear.easeNone
-				}) // in from right
-				.fromTo("section.panel.voilet", 1, {
-					x: "100%"
-				}, {
-					x: "0%",
-					ease: Linear.easeNone
-				}); // in from top
-
-			// create scene to pin and link animation
-			new ScrollMagic.Scene({
-					triggerElement: "#pinContainer",
-					triggerHook: "onLeave",
-					duration: "300%"
-				})
-				.setPin("#pinContainer")
-				.setTween(wipeAnimation)
-				.addTo(controller);
-
-		});
-	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
+	<script src="js/custom.min.js"></script>
 	<script>
+		$('.service-slider').slick({
+			dots: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 5000,
+			fade: true,
+			arrows: false
+		}).slickAnimation();
+
 		$('.product_slider').slick({
 			dots: false,
 			slidesToShow: 3,
@@ -520,17 +484,6 @@
 			]
 		});
 	</script>
-	<script>
-		$(function () {
-			$(document).scroll(function () {
-				var $nav = $("#header");
-				$nav.toggleClass('fixed_w', $(this).scrollTop() > $nav.height());
-			});
-		});
-	</script>
-
-
-
 </body>
 
 </html>
